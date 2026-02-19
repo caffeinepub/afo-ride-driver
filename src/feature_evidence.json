@@ -1,0 +1,64 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-retry-deployment-with-current-build-configuration-and-attempt-to-deploy-the-afo-ride-driver-application-live",
+      "featureTitle": "Retry deployment with current build configuration and attempt to deploy the AFO Ride Driver application live",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-if-deployment-fails-generate-a-preview-draft-of-the-application-without-attempting-live-deployment-ensuring-all-features-are-functional-in-preview-mode",
+      "featureTitle": "If deployment fails, generate a preview draft of the application without attempting live deployment, ensuring all features are functional in preview mode",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/PreviewMode.tsx",
+        "frontend/src/config/environment.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-generate-downloadable-application-files-including-all-source-code-assets-and-build-artifacts-that-can-be-deployed-independently",
+      "featureTitle": "Generate downloadable application files including all source code, assets, and build artifacts that can be deployed independently",
+      "files": [
+        "frontend/public/DEPLOYMENT_INSTRUCTIONS.md",
+        "frontend/src/App.tsx",
+        "frontend/src/components/DownloadPackage.tsx",
+        "frontend/src/utils/packageBuilder.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

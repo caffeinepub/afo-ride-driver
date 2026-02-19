@@ -1,0 +1,22 @@
+{
+  "frontend/src/App.tsx": "Main application component with splash screen, preview mode banner, dashboard, and download package functionality, wrapped in theme and query providers.",
+  "frontend/src/components/SplashScreen.tsx": "Animated splash screen displaying AFO Ride logo with tagline and loading animation.",
+  "frontend/src/components/PreviewMode.tsx": "Banner component that displays when application is running in preview/demo mode.",
+  "frontend/src/components/DownloadPackage.tsx": "Floating button component that triggers download of application package information and instructions.",
+  "frontend/src/components/Dashboard.tsx": "Main dashboard container managing tab navigation between home, wallet, safety, profile, and support sections.",
+  "frontend/src/components/Header.tsx": "Fixed header displaying AFO Ride logo and driver information.",
+  "frontend/src/components/DriverStats.tsx": "Dashboard cards showing driver status toggle, earnings, rating, and wallet balance.",
+  "frontend/src/components/RideRequest.tsx": "Modal component for incoming ride requests with accept/reject functionality and ride progress tracking.",
+  "frontend/src/components/TransactionHistory.tsx": "Card displaying recent payment transactions fetched from backend with loading states.",
+  "frontend/src/components/WalletSection.tsx": "Wallet management interface with balance display, withdrawal functionality, and incentives section.",
+  "frontend/src/components/SafetySection.tsx": "Safety features including SOS button, security requests, emergency contacts, and location sharing.",
+  "frontend/src/components/ProfileSection.tsx": "Driver profile display with personal info, vehicle details, document verification status, and logout.",
+  "frontend/src/components/SupportSection.tsx": "Support interface with call/WhatsApp buttons and issue reporting form.",
+  "frontend/src/components/BottomNav.tsx": "Fixed bottom navigation bar for switching between main app sections.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching transactions and app statistics from backend.",
+  "frontend/public/DEPLOYMENT_INSTRUCTIONS.md": "Comprehensive deployment guide with setup instructions for multiple hosting platforms.",
+  "frontend/src/config/environment.ts": "Environment detection utilities for preview mode and deployment environment.",
+  "frontend/src/utils/packageBuilder.ts": "Utility functions for building downloadable package information and generating readme content.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query and Internet Identity providers with correct CSS import path.",
+  "frontend/src/index.css": "Global styles with Tailwind directives and OKLCH color system for light and dark modes with monochrome theme."
+}

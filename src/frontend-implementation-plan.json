@@ -1,0 +1,88 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Retry deployment or generate preview draft with downloadable files",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "summary": "Retry deployment with current build configuration and attempt to deploy the AFO Ride Driver application live",
+      "acceptanceCriteria": [
+        "Deployment is attempted with existing build artifacts",
+        "If deployment succeeds, application is accessible at live URL",
+        "Deployment status is clearly communicated to user"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DeploymentStatus.tsx",
+          "operation": "create",
+          "description": "Create a deployment status component that displays the current deployment state, shows success/failure messages, and provides a retry button. This component will be used during the deployment attempt to communicate status to the user."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the DeploymentStatus component into the main App component to display deployment status during the retry process. Add conditional rendering to show the deployment status UI when deployment is in progress or completed."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "If deployment fails, generate a preview draft of the application without attempting live deployment, ensuring all features are functional in preview mode",
+      "acceptanceCriteria": [
+        "Preview draft is generated only if deployment fails",
+        "Preview draft includes all implemented features functioning correctly",
+        "No live deployment is attempted after failure",
+        "Preview is accessible for testing and demonstration"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/PreviewMode.tsx",
+          "operation": "create",
+          "description": "Create a preview mode banner component that displays when the application is running in preview/demo mode. This banner should clearly indicate that the app is in preview mode and not deployed live, and include information about accessing the preview."
+        },
+        {
+          "path": "frontend/src/config/environment.ts",
+          "operation": "create",
+          "description": "Create an environment configuration file that detects and manages preview mode vs production mode. This file should export flags and utilities to determine the current runtime environment."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the PreviewMode component into the App component to display the preview banner when running in preview mode. Ensure all existing features (driver dashboard, payment processing, transaction history, statistics) remain fully functional in preview mode."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Generate downloadable application files including all source code, assets, and build artifacts that can be deployed independently",
+      "acceptanceCriteria": [
+        "Downloadable package includes complete frontend source code",
+        "Downloadable package includes complete backend source code",
+        "All generated assets and images are included in download",
+        "Package includes build configuration and deployment instructions",
+        "Downloaded files can be built and deployed independently"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DownloadPackage.tsx",
+          "operation": "create",
+          "description": "Create a download package component that provides a button to download a complete application package. This component should trigger the generation and download of a ZIP file containing all source code, assets (including the generated image at frontend/public/assets/generated/afo-ride-logo.dim_512x512.png), build configurations, and deployment instructions."
+        },
+        {
+          "path": "frontend/src/utils/packageBuilder.ts",
+          "operation": "create",
+          "description": "Create a utility that builds the downloadable package by collecting all frontend source files, assets, configuration files, and generating a README with deployment instructions. The package should include the complete frontend directory structure and the generated logo image."
+        },
+        {
+          "path": "frontend/public/DEPLOYMENT_INSTRUCTIONS.md",
+          "operation": "create",
+          "description": "Create deployment instructions documentation that explains how to build and deploy the downloaded application package independently. Include steps for setting up dependencies, building the project, and deploying to various hosting platforms."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the DownloadPackage component into the App component, making it accessible from the main interface. Position it appropriately so users can easily access the download functionality after deployment failure or in preview mode."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "AFO Ride Driver - A professional driver app demo for AFO Ride India featuring driver registration with document verification, ride management system with accept/reject functionality, real-time earnings tracking, comprehensive safety features including SOS button and on-demand security/bouncer requests, wallet system with withdrawal capabilities, and an admin dashboard for driver approval and monitoring. Built as a mobile-first React web app with premium dark blue and black theme.",
+  "architectural_notes": [
+    "Mobile-first React web app optimized for Android",
+    "Premium dark blue and black theme with AFO Ride India branding",
+    "Modern investor-ready UI with smooth animations",
+    "Demo simulation for ride requests and acceptance flow",
+    "Document upload system for driver verification (DL, RC, Aadhar, profile photo)",
+    "Real-time earnings tracking and wallet management",
+    "Safety-first design with prominent SOS and security request features"
+  ],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-splash-screen-displaying-the-afo-ride-logo-in-center-with-the-tagline-drive-smart-earn-safe-and-a-loading-animation",
+      "title": "Create a splash screen displaying the AFO Ride logo in center with the tagline 'Drive Smart. Earn Safe.' and a loading animation",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-driver-registration-system-with-fields-for-full-name-phone-number-with-otp-verification-demo-city-selection-dropdown-vehicle-type-selection-bike-auto-cab-file-upload-for-dl-rc-aadhar-and-profile-photo-bank-account-details-input-and-submission-with-approval-status-tracking-pending-approved",
+      "title": "Implement driver registration system with fields for full name, phone number with OTP verification demo, city selection dropdown, vehicle type selection (Bike/Auto/Cab), file upload for DL, RC, Aadhar, and profile photo, bank account details input, and submission with approval status tracking (Pending/Approved)",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-driver-dashboard-with-online-offline-toggle-button-today-s-earnings-display-weekly-earnings-display-total-rides-count-driver-rating-display-and-wallet-balance",
+      "title": "Build driver dashboard with online/offline toggle button, today's earnings display, weekly earnings display, total rides count, driver rating display, and wallet balance",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-ride-request-system-with-demo-simulation-that-shows-incoming-ride-popup-with-accept-reject-buttons-displays-pickup-location-drop-location-distance-and-estimated-fare-includes-start-ride-and-end-ride-buttons-implements-automatic-fare-calculation-and-shows-ride-summary-screen-after-completion",
+      "title": "Create ride request system with demo simulation that shows incoming ride popup with accept/reject buttons, displays pickup location, drop location, distance, and estimated fare, includes start ride and end ride buttons, implements automatic fare calculation, and shows ride summary screen after completion",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-driver-safety-system-with-prominent-red-sos-button-emergency-contact-auto-call-functionality-live-location-sharing-feature-night-mode-safety-alert-on-demand-security-bouncer-request-button-and-confirmation-screen-showing-security-team-notified",
+      "title": "Implement driver safety system with prominent red SOS button, emergency contact auto call functionality, live location sharing feature, night mode safety alert, on-demand security/bouncer request button, and confirmation screen showing 'Security Team Notified'",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-wallet-and-payments-section-showing-wallet-balance-withdraw-request-functionality-transaction-history-and-incentives-bonus-section",
+      "title": "Build wallet and payments section showing wallet balance, withdraw request functionality, transaction history, and incentives & bonus section",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-support-section-with-call-support-button-whatsapp-support-button-and-report-an-issue-form",
+      "title": "Create support section with call support button, WhatsApp support button, and report an issue form",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-profile-section-with-edit-profile-capability-vehicle-details-display-documents-view-and-logout-functionality",
+      "title": "Build profile section with edit profile capability, vehicle details display, documents view, and logout functionality",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-admin-panel-web-dashboard-to-view-registered-drivers-approve-or-reject-driver-applications-track-active-rides-monitor-sos-alerts-manage-payments-and-view-analytics",
+      "title": "Create admin panel web dashboard to view registered drivers, approve or reject driver applications, track active rides, monitor SOS alerts, manage payments, and view analytics",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-premium-dark-blue-and-black-color-theme-consistently-across-the-entire-application-with-afo-ride-india-branding-displaying-the-logo-on-splash-screen-and-header-throughout-the-app",
+      "title": "Apply premium dark blue and black color theme consistently across the entire application with AFO Ride India branding, displaying the logo on splash screen and header throughout the app",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-the-application-with-a-modern-clean-professional-layout-optimized-for-mobile-devices-with-smooth-animations-and-realistic-ride-simulation-to-create-an-investor-ready-demo-product",
+      "title": "Design the application with a modern, clean, professional layout optimized for mobile devices with smooth animations and realistic ride simulation to create an investor-ready demo product",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-afo-ride-india-logo-image-to-be-used-on-splash-screen-and-throughout-the-app-header",
+      "title": "Generate AFO Ride India logo image to be used on splash screen and throughout the app header",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-retry-deployment-with-current-build-configuration-and-attempt-to-deploy-the-afo-ride-driver-application-live",
+      "title": "Retry deployment with current build configuration and attempt to deploy the AFO Ride Driver application live",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-if-deployment-fails-generate-a-preview-draft-of-the-application-without-attempting-live-deployment-ensuring-all-features-are-functional-in-preview-mode",
+      "title": "If deployment fails, generate a preview draft of the application without attempting live deployment, ensuring all features are functional in preview mode",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-downloadable-application-files-including-all-source-code-assets-and-build-artifacts-that-can-be-deployed-independently",
+      "title": "Generate downloadable application files including all source code, assets, and build artifacts that can be deployed independently",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Splash screen with AFO Ride logo, tagline 'Drive Smart. Earn Safe.', and loading animation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Driver registration system with full name, phone (OTP verification), city selection, vehicle type, document uploads (DL, RC, Aadhar, profile photo), bank details, and approval status tracking",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Driver dashboard with online/offline toggle, earnings (today/weekly), total rides, rating display, and wallet balance",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Ride request system with incoming ride popup, accept/reject buttons, pickup/drop locations, distance, estimated fare, start/end ride buttons, auto fare calculation, and ride summary screen",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Driver safety system with SOS button, emergency contact auto call, live location sharing, night mode safety alert, and on-demand security/bouncer request with confirmation screen",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Wallet & payments section with balance display, withdraw request, transaction history, and incentives/bonus section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Support section with call support, WhatsApp support, and report issue form",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Profile section with edit profile, vehicle details, documents view, and logout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Admin panel (web dashboard) for viewing registered drivers, approving/rejecting drivers, tracking active rides, monitoring SOS alerts, managing payments, and viewing analytics",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "AFO Ride Driver",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

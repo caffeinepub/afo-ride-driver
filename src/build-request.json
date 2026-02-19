@@ -1,0 +1,80 @@
+{
+  "kind": "build_request",
+  "title": "Retry deployment or generate preview draft with downloadable files",
+  "projectName": "AFO Ride Driver",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "text": "Retry deployment with current build configuration and attempt to deploy the AFO Ride Driver application live",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Retry deployment."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Deployment is attempted with existing build artifacts",
+        "If deployment succeeds, application is accessible at live URL",
+        "Deployment status is clearly communicated to user"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "If deployment fails, generate a preview draft of the application without attempting live deployment, ensuring all features are functional in preview mode",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "If deployment fails again, generate preview draft only.",
+          "Do not deploy live, just create working preview and downloadable app files."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Preview draft is generated only if deployment fails",
+        "Preview draft includes all implemented features functioning correctly",
+        "No live deployment is attempted after failure",
+        "Preview is accessible for testing and demonstration"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Generate downloadable application files including all source code, assets, and build artifacts that can be deployed independently",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "just create working preview and downloadable app files"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Downloadable package includes complete frontend source code",
+        "Downloadable package includes complete backend source code",
+        "All generated assets and images are included in download",
+        "Package includes build configuration and deployment instructions",
+        "Downloaded files can be built and deployed independently"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not attempt live deployment after initial retry fails",
+    "Preserve all existing features and functionality in preview mode",
+    "Ensure preview draft is fully functional for demonstration purposes"
+  ],
+  "nonGoals": [
+    "Making code changes or feature modifications",
+    "Debugging deployment infrastructure issues",
+    "Creating alternative deployment strategies beyond preview draft"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
